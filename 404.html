@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    
+    <title>Page non trouvée (404) - N-Gage | Expert IA Toulouse</title>
+    <meta name="description" content="Page introuvable sur N-Gage. Retrouvez facilement nos formations IA, automatisation et services pour TPE/PME à Toulouse.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <style>
+        /* CSS COMPLET INTÉGRÉ - Basé sur votre style.css + 404 */
+        :root {
+            --couleur-primaire: #F28705;
+            --couleur-sombre: #1a252f;
+            --couleur-secondaire-sombre: #2c3e50;
+            --couleur-fond-clair: #f8f9fa;
+            --couleur-blanc: #fff;
+            --couleur-texte-principal: #1a1a1a;
+            --couleur-texte-secondaire: #2d3748;
+            --couleur-texte-tertiaire: #4a5568;
+            --ombre-legere: 0 2px 10px rgba(0,0,0,0.05);
+            --ombre-normale: 0 5px 15px rgba(0,0,0,0.08);
+            --ombre-forte: 0 10px 30px rgba(0,0,0,0.1);
+            --transition-rapide: all 0.3s ease;
+            --border-radius: 10px;
+            --border-radius-large: 15px;
+            --border-radius-pill: 50px;
+            --container-max-width: 1200px;
+            --header-height: 130px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--couleur-texte-principal);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            box-shadow: var(--ombre-forte);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 100px;
+            width: auto;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+        }
+
+        .logo-text h2 {
+            font-size: 1.5em;
+            margin-bottom: 2px;
+            color: var(--couleur-texte-principal);
+            font-weight: 600;
+        }
+
+        .logo-text p {
+            font-size: 0.9em;
+            color: var(--couleur-texte-secondaire);
+            font-weight: 500;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            color: var(--couleur-texte-principal);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: var(--transition-rapide);
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .nav-link:hover {
+            color: var(--couleur-blanc);
+            background: linear-gradient(135deg, var(--couleur-primaire), #e67e04);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(242, 135, 5, 0.3);
+        }
+
+        .contact-btn {
+            background: linear-gradient(45deg, var(--couleur-secondaire-sombre), var(--couleur-sombre));
+            color: var(--couleur-blanc);
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition-rapide);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(242, 135, 5, 0.4);
+        }
+
+        .social-icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #0A66C2;
+            transition: var(--transition-rapide);
+            padding: 8px;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        .social-icon-link:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.1);
+        }
+
+        .social-icon-link svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            color: var(--couleur-texte-principal);
+            cursor: pointer;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--couleur-blanc);
+            box-shadow: var(--ombre-forte);
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        /* PAGE WRAPPER */
+        .page-wrapper {
+            padding-top: var(--header-height);
+            background-color: var(--couleur-blanc);
+            min-height: 100vh;
+        }
+
+        /* BREADCRUMB */
+        .hero {
+            background: var(--couleur-blanc);
+            padding: 20px 0 60px 0;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: var(--couleur-texte-secondaire);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .breadcrumb a {
+            color: var(--couleur-primaire);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* STYLES 404 SPÉCIFIQUES */
+        .error-404-section {
+            background: var(--couleur-blanc);
+            padding: 60px 0;
+            min-height: calc(100vh - var(--header-height) - 200px);
+            display: flex;
+            align-items: center;
+        }
+
+        .error-404-content {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .error-404-visual {
+            margin-bottom: 40px;
+        }
+
+        .error-number {
+            font-size: 8em;
+            font-weight: 900;
+            color: var(--couleur-primaire);
+            margin-bottom: 10px;
+            text-shadow: 0 4px 8px rgba(242, 135, 5, 0.3);
+            letter-spacing: 0.1em;
+        }
+
+        .error-subtitle {
+            font-size: 1.3em;
+            color: var(--couleur-texte-secondaire);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .error-404-message {
+            margin-bottom: 50px;
+        }
+
+        .error-title {
+            font-size: 2.5em;
+            color: var(--couleur-texte-principal);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .error-description {
+            font-size: 1.2em;
+            color: var(--couleur-texte-secondaire);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .error-suggestions {
+            margin-bottom: 50px;
+        }
+
+        .error-suggestions h3 {
+            color: var(--couleur-texte-principal);
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .suggestions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .suggestion-card {
+            background: var(--couleur-blanc);
+            border: 2px solid #ecf0f1;
+            border-radius: var(--border-radius-large);
+            padding: 30px 20px;
+            transition: var(--transition-rapide);
+            box-shadow: var(--ombre-legere);
+        }
+
+        .suggestion-card:hover {
+            border-color: var(--couleur-primaire);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(242, 135, 5, 0.1);
+        }
+
+        .suggestion-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .suggestion-card h4 {
+            color: var(--couleur-texte-principal);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .suggestion-card p {
+            color: var(--couleur-texte-secondaire);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .cta-primary {
+            background: linear-gradient(45deg, var(--couleur-primaire), #e67e04);
+            color: var(--couleur-blanc);
+            padding: 15px 30px;
+            border: none;
+            border-radius: var(--border-radius-pill);
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition-rapide);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(242, 135, 5, 0.3);
+        }
+
+        .cta-secondary {
+            background: var(--couleur-sombre);
+            color: var(--couleur-blanc);
+            border: 2px solid var(--couleur-sombre);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: var(--transition-rapide);
+            display: inline-block;
+        }
+
+        .cta-secondary:hover {
+            background: var(--couleur-texte-principal);
+            border-color: var(--couleur-texte-principal);
+            transform: translateY(-1px);
+        }
+
+        /* QUICK NAV */
+        .quick-nav {
+            background: var(--couleur-fond-clair);
+            padding: 30px;
+            border-radius: var(--border-radius-large);
+            margin-bottom: 40px;
+        }
+
+        .quick-nav h3 {
+            color: var(--couleur-texte-principal);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .quick-nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .quick-link {
+            background: var(--couleur-blanc);
+            color: var(--couleur-texte-principal);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #ecf0f1;
+            transition: var(--transition-rapide);
+        }
+
+        .quick-link:hover {
+            border-color: var(--couleur-primaire);
+            color: var(--couleur-primaire);
+            transform: translateY(-2px);
+        }
+
+        /* EMERGENCY CONTACT */
+        .emergency-contact {
+            background: linear-gradient(45deg, var(--couleur-secondaire-sombre), var(--couleur-sombre));
+            color: var(--couleur-blanc);
+            padding: 40px;
+            border-radius: var(--border-radius-large);
+            margin-bottom: 50px;
+        }
+
+        .emergency-contact h3,
+        .emergency-contact p {
+            color: var(--couleur-blanc);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-options {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .emergency-contact .cta-secondary {
+            background: transparent;
+            border: 2px solid var(--couleur-blanc);
+            color: var(--couleur-blanc);
+        }
+
+        .emergency-contact .cta-secondary:hover {
+            background: var(--couleur-blanc);
+            color: var(--couleur-primaire);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: linear-gradient(45deg, var(--couleur-secondaire-sombre), var(--couleur-sombre));
+            color: var(--couleur-blanc);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: var(--couleur-blanc);
+        }
+
+        .footer-links {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .footer-link {
+            color: #e2e8f0;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-link:hover {
+            color: var(--couleur-primaire);
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .logo img {
+                height: 60px;
+            }
+            
+            .error-number {
+                font-size: 5em;
+            }
+            
+            .error-title {
+                font-size: 1.8em;
+            }
+            
+            .suggestions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-options {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-number {
+                font-size: 4em;
+            }
+            
+            .error-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ===== HEADER INDEX.HTML CORRIGÉ ===== -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo-n-gage.webp" alt="Logo N-Gage - Expert IA et Automatisation pour TPE/PME à Toulouse" width="200" height="200">
+                <div class="logo-text">
+                    <h2>N-Gage</h2>
+                    <p>Expert IA & Automatisation</p>
+                </div>
+            </div>
+            
+            <nav class="nav-menu" role="navigation" aria-label="Navigation principale">
+                <a href="index.html" class="nav-link" aria-current="page">Accueil</a>
+                <a href="apropos.html" class="nav-link">À propos</a>
+                <a href="catalogue.html" class="nav-link">Catalogue</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                
+                <a href="https://www.linkedin.com/in/nicolas-graillot-166aa3127" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Nicolas Graillot" class="social-icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            
+                <a href="contact.html" class="contact-btn">✉️ Me contacter</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" 
+            onclick="toggleMobileMenu()" 
+            aria-label="Ouvrir le menu de navigation"
+            aria-expanded="false"
+            aria-controls="mobileNav">☰</button>
+            
+            <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Menu mobile">
+                <a href="apropos.html" class="nav-link">À propos</a>
+                <a href="catalogue.html" class="nav-link">Catalogue</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="https://www.linkedin.com/in/nicolas-graillot-166aa3127/" target="_blank" rel="noopener noreferrer" class="nav-link">
+                    Mon profil LinkedIn
+                </a>
+                <a href="contact.html" class="contact-btn">✉️ Me contacter</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main class="page-wrapper">
+        <section class="hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/index.html">Accueil</a> → Erreur 404
+                </div>
+            </div>
+        </section>
+
+        <section class="error-404-section">
+            <div class="container">
+                <div class="error-404-content">
+                    <div class="error-404-visual">
+                        <div class="error-number">4🤖4</div>
+                        <div class="error-subtitle">Intelligence artificielle... page introuvable !</div>
+                    </div>
+
+                    <div class="error-404-message">
+                        <h1 class="error-title">Oops ! Cette page a disparu</h1>
+                        <p class="error-description">
+                            Même mon IA n'arrive pas à localiser cette page. Elle a peut-être été déplacée, supprimée, ou l'URL contient une erreur de frappe.
+                        </p>
+                        
+                        <div class="error-suggestions">
+                            <h3>🎯 Que faire maintenant ?</h3>
+                            <div class="suggestions-grid">
+                                <div class="suggestion-card">
+                                    <div class="suggestion-icon">🏠</div>
+                                    <h4>Retour à l'accueil</h4>
+                                    <p>Découvrez mes formations IA et services d'automatisation</p>
+                                    <a href="/index.html" class="cta-primary">Accueil</a>
+                                </div>
+                                
+                                <div class="suggestion-card">
+                                    <div class="suggestion-icon">📋</div>
+                                    <h4>Voir le catalogue</h4>
+                                    <p>Formations ChatGPT, automatisation et consulting IA</p>
+                                    <a href="/catalogue.html" class="cta-primary">Catalogue</a>
+                                </div>
+                                
+                                <div class="suggestion-card">
+                                    <div class="suggestion-icon">🎁</div>
+                                    <h4>Audit gratuit</h4>
+                                    <p>30 minutes pour analyser vos besoins en IA</p>
+                                    <a href="https://calendly.com/nicolas_graillot_n-gage/30min" target="_blank" rel="noopener noreferrer" class="cta-primary">Réserver</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-nav">
+                            <h3>🧭 Navigation rapide</h3>
+                            <div class="quick-nav-links">
+                                <a href="/apropos.html" class="quick-link">À propos de Nicolas</a>
+                                <a href="/catalogue.html#formations" class="quick-link">Formations IA</a>
+                                <a href="/catalogue.html#packs" class="quick-link">Packs formations</a>
+                                <a href="/catalogue.html#prestations" class="quick-link">Services sur-mesure</a>
+                                <a href="mailto:contact@n-gage.fr" class="quick-link">Contact direct</a>
+                            </div>
+                        </div>
+
+                        <div class="emergency-contact">
+                            <h3>🆘 Besoin d'aide immédiate ?</h3>
+                            <p>Contactez-moi directement pour toute question sur l'IA ou l'automatisation</p>
+                            <div class="contact-options">
+                                <a href="mailto:contact@n-gage.fr?subject=Page%20404%20-%20Besoin%20d'aide" class="cta-secondary">
+                                    📧 Email direct
+                                </a>
+                                <a href="tel:0766913240" class="cta-secondary">
+                                    📞 07 66 91 32 40
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 N-Gage - Nicolas Graillot | Expert IA & Automatisation | Toulouse</p>
+            <div class="footer-links">
+                <a href="/mentions-legales.html" class="footer-link">Mentions légales</a>
+                <a href="/cgv.html" class="footer-link">CGV</a>
+                <a href="/politique-de-confidentialite.html" class="footer-link">Politique de Confidentialité</a>
+                <a href="#" onclick="manageCookies(); return false;" class="footer-link">Gérer les cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            if (mobileNav) {
+                mobileNav.classList.toggle('active');
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileNav && mobileBtn && !mobileNav.contains(event.target) && !mobileBtn.contains(event.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+
+        // Track 404 pour analytics
+        if (window.gtag) {
+            gtag('event', 'page_not_found', {
+                'event_category': 'error',
+                'event_label': window.location.href
+            });
+        }
+    </script>
+</body>
+</html>

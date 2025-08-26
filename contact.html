@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    
+    <!-- SEO Contact Page -->
+    <title>Contact Expert IA Toulouse | Nicolas Graillot N-Gage | Audit Gratuit</title>
+    <meta name="description" content="📞 Contactez Nicolas Graillot, expert IA Toulouse. Audit gratuit 30min, formations ChatGPT, automatisation TPE. Réponse sous 24h garantie. 07 66 91 32 40">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Expert IA Toulouse | Nicolas Graillot N-Gage">
+    <meta property="og:description" content="Contactez Nicolas Graillot pour vos besoins en IA et automatisation. Audit gratuit 30min.">
+    <meta property="og:url" content="https://www.n-gage.fr/contact.html">
+    <meta property="og:image" content="https://www.n-gage.fr/images/nicolas-graillot-portrait.webp">
+    
+    <!-- Schema Contact -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact N-Gage - Expert IA Toulouse",
+      "description": "Page de contact pour formations IA et services d'automatisation",
+      "url": "https://www.n-gage.fr/contact.html",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Nicolas Graillot",
+        "jobTitle": "Expert IA & Automatisation",
+        "telephone": "+33766913240",
+        "email": "contact@n-gage.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12 Rue Nouadhibou, BAT D103",
+          "addressLocality": "Toulouse",
+          "postalCode": "31400",
+          "addressCountry": "FR"
+        }
+      }
+    }
+    </script>
+    
+    <!-- Tally Script - Placé dans le head -->
+    <script src="https://tally.so/widgets/embed.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cookies.css">
+    
+    <style>
+        /* Styles spécifiques page contact */
+        .contact-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--couleur-blanc);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .contact-hero h1 {
+            color: var(--couleur-blanc);
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .contact-hero p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .contact-main {
+            background: var(--couleur-blanc);
+            padding: 60px 0;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .contact-form-section {
+            background: var(--couleur-fond-clair);
+            padding: 40px;
+            border-radius: var(--border-radius-large);
+            border-left: 4px solid var(--couleur-primaire);
+        }
+        
+        .contact-info-section {
+            padding: 40px 20px;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--couleur-texte-principal);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            font-size: 1em;
+            transition: var(--transition-rapide);
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--couleur-primaire);
+            box-shadow: 0 0 0 3px rgba(242, 135, 5, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-group.required label::after {
+            content: " *";
+            color: #dc3545;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(45deg, var(--couleur-primaire), #e67e04);
+            color: var(--couleur-blanc);
+            padding: 15px 30px;
+            border: none;
+            border-radius: var(--border-radius-pill);
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition-rapide);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(242, 135, 5, 0.3);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: var(--couleur-fond-clair);
+            border-radius: var(--border-radius);
+            transition: var(--transition-rapide);
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--ombre-normale);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--couleur-primaire);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--couleur-blanc);
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h3 {
+            color: var(--couleur-texte-principal);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .contact-details p {
+            color: var(--couleur-texte-secondaire);
+            margin: 0;
+        }
+        
+        .contact-details a {
+            color: var(--couleur-primaire);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* STYLES TALLY OPTIMISÉS */
+        .tally-embed {
+            background: var(--couleur-blanc);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--ombre-legere);
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .tally-embed iframe {
+            border-radius: var(--border-radius);
+            width: 100%;
+            min-height: 400px; /* Hauteur réduite pour plus de légèreté */
+            border: none;
+        }
+        
+        .alternative-contact {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        
+        .urgency-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .urgency-notice p {
+            margin: 0;
+            color: #856404;
+            font-weight: 600;
+        }
+        
+        .response-guarantee {
+            background: var(--couleur-primaire);
+            color: var(--couleur-blanc);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .response-guarantee h3 {
+            color: var(--couleur-blanc);
+            margin-bottom: 10px;
+        }
+        
+        .response-guarantee p {
+            margin: 0;
+            opacity: 0.95;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .contact-form-section,
+            .contact-info-section {
+                padding: 25px;
+            }
+            
+            .contact-hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+   <!-- ===== HEADER INDEX.HTML CORRIGÉ ===== -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo-n-gage.webp" alt="Logo N-Gage - Expert IA et Automatisation pour TPE/PME à Toulouse" width="200" height="200">
+                <div class="logo-text">
+                    <h2>N-Gage</h2>
+                    <p>Expert IA & Automatisation</p>
+                </div>
+            </div>
+            
+            <nav class="nav-menu" role="navigation" aria-label="Navigation principale">
+                <a href="index.html" class="nav-link" aria-current="page">Accueil</a>
+                <a href="apropos.html" class="nav-link">À propos</a>
+                <a href="catalogue.html" class="nav-link">Catalogue</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                
+                <a href="https://www.linkedin.com/in/nicolas-graillot-166aa3127" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Nicolas Graillot" class="social-icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            
+                <a href="contact.html" class="nav-link active">✉️ Me contacter</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" 
+            onclick="toggleMobileMenu()" 
+            aria-label="Ouvrir le menu de navigation"
+            aria-expanded="false"
+            aria-controls="mobileNav">☰</button>
+            
+            <nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Menu mobile">
+                <a href="apropos.html" class="nav-link">À propos</a>
+                <a href="catalogue.html" class="nav-link">Catalogue</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="https://www.linkedin.com/in/nicolas-graillot-166aa3127/" target="_blank" rel="noopener noreferrer" class="nav-link">
+                    Mon profil LinkedIn
+                </a>
+                <a href="contact.html" class="contact-btn">✉️ Me contacter</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main class="page-wrapper">
+        <section class="contact-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/index.html">Accueil</a> → Contact
+                </div>
+                <h1>Contactez votre expert IA</h1>
+                <p>Transformons ensemble votre quotidien professionnel grâce à l'intelligence artificielle</p>
+            </div>
+        </section>
+
+        <section class="contact-main">
+            <div class="contact-container">
+                <div class="contact-form-section">
+                    <h2>📝 Parlez-moi de votre projet IA</h2>
+                    <p>Formulaire rapide pour mieux comprendre vos besoins et vous répondre de façon personnalisée !</p>
+                    
+                    <!-- VOTRE FORMULAIRE TALLY INTÉGRÉ -->
+                    <div class="tally-embed">
+                        <iframe 
+                            data-tally-src="https://tally.so/embed/3yrQ8X?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                            loading="lazy" 
+                            width="100%" 
+                            height="4032" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            title="🚀 AUDIT IA GRATUIT : Gagnez 4 à 10h/semaine - Diagnostic personnalisé pour votre PME/TPE">
+                        </iframe>
+                        <script>
+                            var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+                        </script>
+                    </div>
+                    
+                    <!-- OPTIONS ALTERNATIVES -->
+                    <div class="alternative-contact">
+                        <p style="text-align: center; margin: 30px 0 15px; font-weight: 600; color: var(--couleur-texte-secondaire);">
+                            Ou préférez-vous une autre méthode ?
+                        </p>
+                        
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            
+                            <a href="https://calendly.com/nicolas_graillot_n-gage/30min" target="_blank" rel="noopener noreferrer" class="cta-primary" style="text-decoration: none;">
+                                🎁 Audit gratuit 30min
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="urgency-notice">
+                        <p>⚡ Besoin urgent ? Appelez directement : <a href="tel:+33766913240">07 66 91 32 40</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>📞 Autres moyens de contact</h2>
+                    
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Téléphone direct</h3>
+                                <p><a href="tel:+33766913240">07 66 91 32 40</a></p>
+                                <p>Lun-Ven 9h-18h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email direct</h3>
+                                <p><a href="mailto:contact@n-gage.fr">contact@n-gage.fr</a></p>
+                                <p>Réponse sous 24h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">🎁</div>
+                            <div class="contact-details">
+                                <h3>Audit gratuit</h3>
+                                <p><a href="https://calendly.com/nicolas_graillot_n-gage/30min" target="_blank">Réserver 30min</a></p>
+                                <p>Sans engagement</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Localisation</h3>
+                                <p>Toulouse, Occitanie</p>
+                                <p>Présentiel / Visio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/nicolas-graillot-166aa3127" target="_blank">Profil Nicolas</a></p>
+                                <p>Restons connectés</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="response-guarantee">
+                        <h3>⚡ Garantie de réponse</h3>
+                        <p>Je réponds personnellement à tous les messages sous 24h (jours ouvrés). Pour les urgences, appelez directement !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 N-Gage - Nicolas Graillot | Expert IA & Automatisation | Toulouse</p>
+            <div class="footer-links">
+                <a href="/mentions-legales.html" class="footer-link">Mentions légales</a>
+                <a href="/cgv.html" class="footer-link">CGV</a>
+                <a href="/politique-de-confidentialite.html" class="footer-link">Politique de Confidentialité</a>
+                <a href="#" onclick="manageCookies(); return false;" class="footer-link">Gérer les cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="cookies.js"></script>
+    
+    <script>
+        // Analytics pour page contact optimisé
+        if (window.gtag) {
+            gtag('event', 'page_view', {
+                'page_title': 'Contact - Expert IA Toulouse',
+                'page_location': window.location.href,
+                'content_group1': 'contact',
+                'custom_parameter_1': 'contact_page_tally'
+            });
+        }
+        
+        // Tracking ouverture formulaire Tally
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'tally-form-loaded') {
+                if (window.gtag) {
+                    gtag('event', 'form_view', {
+                        'event_category': 'contact',
+                        'event_label': 'tally_form_loaded'
+                    });
+                }
+            }
+            
+            if (event.data && event.data.type === 'tally-form-submitted') {
+                if (window.gtag) {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'contact',
+                        'event_label': 'tally_form_submitted',
+                        'value': 1
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

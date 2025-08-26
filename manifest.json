@@ -1,0 +1,10 @@
+{
+  "name": "N-Gage - Expert IA Toulouse",
+  "short_name": "N-Gage",
+  "description": "Formation IA et automatisation pour TPE/PME à Toulouse",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F28705",
+  "lang": "fr"
+}

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ================================ -->
+  <!-- PAGE PRINCIPALE                  -->
+  <!-- ================================ -->
+  
+  <!-- Accueil -->
+  <url>
+    <loc>https://www.n-gage.fr/</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/nicolas-graillot-portrait.webp</image:loc>
+      <image:title>Nicolas Graillot - Expert IA et Automatisation TPE</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/logo-n-gage.webp</image:loc>
+      <image:title>Logo N-Gage - Expert IA</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/carte-visite-recto.webp</image:loc>
+      <image:title>Carte de visite N-Gage recto</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/nico-podcast.webp</image:loc>
+      <image:title>Nicolas Graillot au micro</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/nico-formation.webp</image:loc>
+      <image:title>Nicolas Graillot en formation</image:title>
+    </image:image>
+  </url>
+
+  <!-- ================================ -->
+  <!-- FORMATIONS & SERVICES            -->
+  <!-- ================================ -->
+
+  <!-- Formation NotebookLM (2h) -->
+  <url>
+    <loc>https://www.n-gage.fr/formation-notebooklm.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/notebooklm-logo.webp</image:loc>
+      <image:title>Google NotebookLM - Formation professionnelle</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/notebooklm-fonctionnalites.webp</image:loc>
+      <image:title>NotebookLM – Fonctionnalités clés et cas d'usage</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/notebooklm-limites.webp</image:loc>
+      <image:title>NotebookLM – Limites et bonnes pratiques</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/notebooklm-programme.webp</image:loc>
+      <image:title>NotebookLM – Programme de formation sur 2 heures</image:title>
+    </image:image>
+  </url>
+
+  <!-- Formation Canva 2025 -->
+  <url>
+    <loc>https://www.n-gage.fr/formation-canva.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva1.webp</image:loc>
+      <image:title>Logo Canva 2025 - Formation professionnelle</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-doc.webp</image:loc>
+      <image:title>Canva Docs - Documents collaboratifs avec Magic Write</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-feuille.webp</image:loc>
+      <image:title>Canva Feuille - Tableaux et formules avec IA</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-whiteboard.webp</image:loc>
+      <image:title>Tableaux blancs Canva - Brainstorming collaboratif</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-app.webp</image:loc>
+      <image:title>Sites multipages Canva - Création responsive</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-pres-video.webp</image:loc>
+      <image:title>Canva Présentations et Vidéo - Templates professionnels</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-impression.webp</image:loc>
+      <image:title>Canva Impression - Produits imprimés professionnels</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-gen.webp</image:loc>
+      <image:title>Canva Design for Me - Génération IA de designs</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-bulk.webp</image:loc>
+      <image:title>Canva Bulk Create - Automatisation en masse</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-productivite.webp</image:loc>
+      <image:title>Canva Productivité - Workflows professionnels</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/canva-planif.webp</image:loc>
+      <image:title>Canva Planification - Contenu interactif et programmé</image:title>
+    </image:image>
+  </url>
+
+  <!-- Catalogue -->
+  <url>
+    <loc>https://www.n-gage.fr/catalogue.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- PAGES INSTITUTIONNELLES          -->
+  <!-- ================================ -->
+
+  <!-- À propos -->
+  <url>
+    <loc>https://www.n-gage.fr/apropos.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/nicolas-graillot-portrait.webp</image:loc>
+      <image:title>Parcours Nicolas Graillot - Expert IA et automatisation</image:title>
+    </image:image>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.n-gage.fr/contact.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- CONTENU ÉDITORIAL - BLOG         -->
+  <!-- ================================ -->
+
+  <!-- Page d'accueil du blog -->
+  <url>
+    <loc>https://www.n-gage.fr/blog.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/blog-og-image.webp</image:loc>
+      <image:title>Blog N-Gage - Conseils IA pour TPE/PME</image:title>
+    </image:image>
+  </url>
+
+  <!-- Article de blog NotebookLM -->
+  <url>
+    <loc>https://www.n-gage.fr/article-blog-notebooklm.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/blog/notebooklm-guide-complet.webp</image:loc>
+      <image:title>NotebookLM - Guide complet pour l'IA documentaire</image:title>
+    </image:image>
+  </url>
+
+  <!-- Article de blog automatisation emails -->
+  <url>
+    <loc>https://www.n-gage.fr/article-blog-automatiser-emails.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    
+    <image:image>
+      <image:loc>https://www.n-gage.fr/images/blog/automatisation-emails.webp</image:loc>
+      <image:title>Guide pratique automatisation emails professionnels</image:title>
+    </image:image>
+  </url>
+
+  <!-- ================================ -->
+  <!-- PAGES LÉGALES                    -->
+  <!-- ================================ -->
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://www.n-gage.fr/mentions-legales.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Conditions générales de vente -->
+  <url>
+    <loc>https://www.n-gage.fr/cgv.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Politique de confidentialité -->
+  <url>
+    <loc>https://www.n-gage.fr/politique-de-confidentialite.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ================================ -->
+  <!-- PAGES TECHNIQUES                 -->
+  <!-- ================================ -->
+
+  <!-- Page 404 -->
+  <url>
+    <loc>https://www.n-gage.fr/404.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>

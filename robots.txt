@@ -1,0 +1,100 @@
+# Robots.txt - N-Gage (Hostinger)
+# MAJ : 2025-08-22
+
+User-agent: *
+Allow: /
+
+# Blog et articles (explicite pour le SEO)
+Allow: /blog.html
+Allow: /article-blog-*.html
+
+# Répertoires/ressources à ne pas crawler (sécurité/tech)
+Disallow: /cpanel/
+Disallow: /cgi-bin/
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /database/
+Disallow: /phpmyadmin/
+Disallow: /webmail/
+# Vestiges WP (pas utilisés mais inoffensifs si absents)
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+# Dev/staging
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.log$
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+
+# Googlebot : no crawl-delay (ignoré de toute façon)
+User-agent: Googlebot
+Allow: /
+Allow: /blog.html
+Allow: /article-blog-*.html
+
+# Bing & Yahoo (Slurp) : crawl-delay utile
+User-agent: Bingbot
+Allow: /
+Allow: /blog.html
+Allow: /article-blog-*.html
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Allow: /blog.html
+Allow: /article-blog-*.html
+Crawl-delay: 3
+
+User-agent: DuckDuckBot
+Allow: /
+Allow: /blog.html
+Allow: /article-blog-*.html
+Crawl-delay: 1
+
+# Bots sociaux (facultatif car Allow: /, mais explicite)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Bots indésirables
+User-agent: SemrushBot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: BLEXBot
+Disallow: /
+User-agent: PetalBot
+Disallow: /
+User-agent: YandexBot
+Disallow: /
+User-agent: BaiduSpider
+Disallow: /
+User-agent: SiteAuditBot
+Disallow: /
+User-agent: SpiderLing
+Disallow: /
+User-agent: LinkpadBot
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+
+# Sitemap mis à jour
+Sitemap: https://www.n-gage.fr/sitemap.xml
